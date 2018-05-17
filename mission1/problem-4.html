@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>辐射标致</title>
+    <style type="text/css">
+        #warning{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: yellow;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .shell{
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 100px;
+            left: 50%;
+            margin-left: -90px;
+            border-style: solid;
+            border-color: transparent transparent #000 transparent;
+            border-width: 0 90px 156px 90px;
+            transform-origin: top;
+        }
+        .shell.shell-1{
+            transform: rotate(0deg);
+        }
+        .shell.shell-2{
+            transform: rotate(120deg);
+        }
+        .shell.shell-3{
+            transform: rotate(-120deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="warning">
+        <div class="shell shell-1"></div>
+        <div class="shell shell-2"></div>
+        <div class="shell shell-3"></div>
+    </div>
+</body>
+</html>
